@@ -75,7 +75,7 @@ export default [
     title: 'Infinite pipes',
     link: '/infinite-pipes',
     video:
-      'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624762039/portfolio/infinite-pipes/2021.01.01-21.51.23_u0n24v.mp4',
+      'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624769021/portfolio/infinite-pipes/2021.06.27-00.38.18_ru3a4h.mp4',
     type: 'video',
     year: 2019,
   },

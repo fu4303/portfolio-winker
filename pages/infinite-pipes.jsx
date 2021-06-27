@@ -19,7 +19,10 @@ export default function Home() {
             gap: '$3',
           }}
         >
-          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624762039/portfolio/infinite-pipes/2021.01.01-21.51.23_u0n24v.mp4" />
+          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624769024/portfolio/infinite-pipes/2021.06.27-00.36.42_uwbefo.mp4" />
+          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624769021/portfolio/infinite-pipes/2021.06.27-00.38.18_ru3a4h.mp4" />
+          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624769017/portfolio/infinite-pipes/2021.06.27-00.39.09_cb1arq.mp4" />
+          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624769023/portfolio/infinite-pipes/2021.06.27-00.43.01_o4qpo6.mp4" />
         </Box>
       </Box>
     </>
