@@ -1,9 +1,8 @@
 import Head from 'next/head';
 import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
-import { ProjectCard } from '../components/ProjectCard';
-import { VideoCard } from '../components/VideoCard';
-import works from '../data/works';
+import { WebsiteCard } from '../components/WebsiteCard';
+import websites from '../data/websites';
 
 export default function Home() {
   return (
@@ -12,21 +11,17 @@ export default function Home() {
         <title>Works | Varun Vachhar</title>
       </Head>
       <Box css={{ paddingY: '$6', mb: '$6' }}>
-        <PageHeader title="Works" />
+        <PageHeader title="Websites" />
         <Box
           css={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(384px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(256px, 1fr))',
             gap: '$4',
           }}
         >
-          {works.map((work, idx) =>
-            work.video ? (
-              <VideoCard key={idx} {...work} />
-            ) : (
-              <ProjectCard key={idx} {...work} />
-            )
-          )}
+          {websites.map((work, idx) => (
+            <WebsiteCard key={idx} {...work} />
+          ))}
         </Box>
       </Box>
     </>
