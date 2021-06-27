@@ -10,14 +10,14 @@ const Image = styled('img', {
   height: 'auto',
 });
 
-export const Media = ({ image, video }) => (
+export const Media = ({ image, video, ...props }) => (
   <>
     {video ? (
-      <Video autoPlay loop muted playsInline display="block" mb="0">
+      <Video autoPlay loop muted playsInline display="block" mb="0" {...props}>
         <source src={video} type="video/mp4" />
       </Video>
     ) : (
-      <Image src={image} display="block" />
+      <Image src={image} display="block" {...props} />
     )}
   </>
 );

@@ -19,8 +19,22 @@ export default function Home() {
             gap: '$3',
           }}
         >
-          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624749284/portfolio/chamkeele-pathar/chamkeele-pathar-2_cqon5f.mp4" />
-          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624749283/portfolio/chamkeele-pathar/chamkeele-pathar-1_zgjfwv.mp4" />
+          <Media
+            css={{ border: '1px solid $neutral4', borderRadius: '$2' }}
+            video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624749284/portfolio/chamkeele-pathar/chamkeele-pathar-2_cqon5f.mp4"
+          />
+          <Media
+            css={{ border: '1px solid $neutral4', borderRadius: '$2' }}
+            video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624749283/portfolio/chamkeele-pathar/chamkeele-pathar-1_zgjfwv.mp4"
+          />
+          <Media
+            css={{ border: '1px solid $neutral4', borderRadius: '$2' }}
+            video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624766742/portfolio/chamkeele-pathar/2021.05.12-15.40.40_c9bs54.mp4"
+          />
+          <Media
+            css={{ border: '1px solid $neutral4', borderRadius: '$2' }}
+            video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624766742/portfolio/chamkeele-pathar/2021.05.12-11.45.02_akyyc7.mp4"
+          />
         </Box>
       </Box>
     </>

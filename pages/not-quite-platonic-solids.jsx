@@ -14,12 +14,14 @@ export default function Home() {
         <Box
           css={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(40%, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(30%, 1fr))',
             gridAutoFlow: 'dense',
             gap: '$3',
           }}
         >
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624761078/portfolio/not-quite-platonic-solids/2021.03.02-20.46.03_nhm95t.mp4" />
+          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624766614/portfolio/not-quite-platonic-solids/2021.03.02-20.50.44_idbqud.mp4" />
+          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624766612/portfolio/not-quite-platonic-solids/2021.02.27-17.10.49_ddzlb9.mp4" />
         </Box>
       </Box>
     </>
