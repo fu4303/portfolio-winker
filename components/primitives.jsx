@@ -11,6 +11,7 @@ export const Text = styled('p', {
   mb: '$4',
   fontSize: '$2',
   lineHeight: '$copy',
+  boxSizing: 'border-box',
 });
 
 export const Link = styled('a', {

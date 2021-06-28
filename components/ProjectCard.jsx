@@ -27,9 +27,9 @@ export const Title = styled('p', {
   lineHeight: '$solid',
 });
 
-export const ProjectCard = ({ title, link, image, ratio }) => (
+export const ProjectCard = ({ title, link, image, ...props }) => (
   <NextLink href={link} passHref>
-    <Card>
+    <Card {...props}>
       <Thumbnail css={{ bgImage: image }} />
       <Title>{title}</Title>
     </Card>

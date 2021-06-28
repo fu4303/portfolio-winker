@@ -14,8 +14,7 @@ export default function Home() {
         <Box
           css={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(40%, 1fr))',
-            gridAutoFlow: 'dense',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))',
             gap: '$3',
           }}
         >

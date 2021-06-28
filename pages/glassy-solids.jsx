@@ -14,16 +14,16 @@ export default function Home() {
         <Box
           css={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(30%, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
             gridAutoFlow: 'dense',
             gap: '$3',
           }}
         >
-          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624758982/portfolio/glassy-solids/2021.02.26-21.55.58_uuwdva.mp4" />
+          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624840916/portfolio/glassy-solids/2021.02.26-21.55.58_uuwdva_punucp.mp4" />
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624758980/portfolio/glassy-solids/2021.02.27-14.20.33_u6ayue.mp4" />
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624758980/portfolio/glassy-solids/2021.02.25-21.59.09_wo6ytg.mp4" />
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624758979/portfolio/glassy-solids/2021.02.27-14.21.39_vhn8ug.mp4" />
-          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624758977/portfolio/glassy-solids/2021.02.25-21.36.45_r4dug2.mp4" />
+          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624841056/portfolio/glassy-solids/2021.02.25-21.36.45_r4dug2_ldxono.mp4" />
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624758976/portfolio/glassy-solids/2021.02.26-22.22.54_cx4x1a.mp4" />
         </Box>
       </Box>

@@ -11,20 +11,43 @@ export default function Home() {
       <Head>
         <title>Works | Varun Vachhar</title>
       </Head>
-      <Box css={{ paddingY: '$6', mb: '$6' }}>
+      <Box css={{ mb: '$6' }}>
         <PageHeader title="Works" />
         <Box
           css={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(384px, 1fr))',
-            gap: '$4',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+            gridAutoFlow: 'dense',
+            gap: '$3',
           }}
         >
           {works.map((work, idx) =>
             work.video ? (
-              <VideoCard key={idx} {...work} />
+              <VideoCard
+                key={idx}
+                css={
+                  work.span
+                    ? {
+                        gridColumn: `span ${work.span}`,
+                        gridRow: `span ${work.span}`,
+                      }
+                    : {}
+                }
+                {...work}
+              />
             ) : (
-              <ProjectCard key={idx} {...work} />
+              <ProjectCard
+                key={idx}
+                css={
+                  work.span
+                    ? {
+                        gridColumn: `span ${work.span}`,
+                        gridRow: `span ${work.span}`,
+                      }
+                    : {}
+                }
+                {...work}
+              />
             )
           )}
         </Box>

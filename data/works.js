@@ -6,6 +6,7 @@ export default [
       'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624756216/portfolio/painting-with-gradients/gradient-painting-cover_rn4ait.mp4',
     type: 'video',
     year: 2021,
+    span: 2,
   },
   {
     title: 'चमकीले पत्थर',
@@ -16,10 +17,10 @@ export default [
     year: 2021,
   },
   {
-    title: 'Dragon skin',
-    link: '/dragon-skin',
+    title: 'Not quite platonic solids',
+    link: '/not-quite-platonic-solids',
     video:
-      'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624749314/portfolio/dragon-skin/2021.05.15-12.40.00_iqztae.mp4',
+      'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624761078/portfolio/not-quite-platonic-solids/2021.03.02-20.46.03_nhm95t.mp4',
     type: 'video',
     year: 2021,
   },
@@ -40,20 +41,12 @@ export default [
     year: 2021,
   },
   {
-    title: 'Not quite platonic solids',
-    link: '/not-quite-platonic-solids',
+    title: 'Dragon skin',
+    link: '/dragon-skin',
     video:
-      'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624761078/portfolio/not-quite-platonic-solids/2021.03.02-20.46.03_nhm95t.mp4',
+      'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624749314/portfolio/dragon-skin/2021.05.15-12.40.00_iqztae.mp4',
     type: 'video',
     year: 2021,
-  },
-  {
-    title: 'Torsions',
-    link: '/torsions',
-    video:
-      'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624761653/portfolio/torsions/2020.10.18-21.28.06_iakksd.mp4',
-    type: 'video',
-    year: 2020,
   },
   {
     title: 'RLRR',
@@ -64,20 +57,45 @@ export default [
     year: 2020,
   },
   {
-    title: 'Mashing Mesh',
-    link: '/mashing-mesh',
-    video:
-      'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624760834/portfolio/mashing-mesh/2021.01.02-22.44.22_wskwio.mp4',
-    type: 'image',
-    year: 2020,
-  },
-  {
     title: 'Infinite pipes',
     link: '/infinite-pipes',
     video:
       'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624769021/portfolio/infinite-pipes/2021.06.27-00.38.18_ru3a4h.mp4',
     type: 'video',
     year: 2019,
+    span: 2,
+  },
+  {
+    title: 'Torsions',
+    link: '/torsions',
+    video:
+      'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624761653/portfolio/torsions/2020.10.18-21.28.06_iakksd.mp4',
+    type: 'video',
+    year: 2020,
+  },
+  {
+    title: 'Mashing Mesh',
+    link: '/mashing-mesh',
+    video:
+      'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624760834/portfolio/mashing-mesh/2021.01.02-22.44.22_wskwio.mp4',
+    type: 'video',
+    year: 2020,
+  },
+  {
+    title: 'Some caterpillars stay caterpillars',
+    link: '/some-caterpillars-stay-caterpillars',
+    video:
+      'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624825612/portfolio/some-caterpillars-stay-caterpillars/2021.01.02-21.17.27_wzezju.mp4',
+    type: 'video',
+    year: 2020,
+  },
+  {
+    title: 'Curtains',
+    link: '/curtains',
+    image:
+      'https://res.cloudinary.com/dpym7j3nj/image/upload/v1624841494/portfolio/curtains/springywavybox_r7enlu.gif',
+    type: 'gif',
+    year: 2012,
   },
   // {
   //   title: 'Homesick',

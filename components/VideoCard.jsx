@@ -3,7 +3,8 @@ import { styled } from '../stitches.config';
 import { AspectRatio } from './AspectRatio';
 
 const Card = styled('a', {
-  display: 'block',
+  display: 'flex',
+  flexDirection: 'column',
   cursor: 'pointer',
   textDecoration: 'none',
   dim: true,
@@ -15,7 +16,15 @@ const Thumbnail = styled(AspectRatio, {
   borderRadius: '$2',
   position: 'relative',
   overflow: 'hidden',
+  flex: 1,
 });
+
+// const Thumbnail = styled('div', {
+//   width: '100%',
+//   flex: 1,
+//   overflow: 'hidden',
+//   position: 'relative',
+// });
 
 const Video = styled('video', {
   position: 'absolute',
@@ -38,9 +47,9 @@ const Title = styled('p', {
   lineHeight: '$solid',
 });
 
-export const VideoCard = ({ title, link, video }) => (
+export const VideoCard = ({ title, link, video, ...props }) => (
   <NextLink href={link} passHref>
-    <Card>
+    <Card {...props}>
       <Thumbnail>
         <Video autoPlay loop muted playsInline display="block" mb="0">
           <source src={video} type="video/mp4" />

@@ -10,7 +10,7 @@ export default function Home() {
         <title>Works | Varun Vachhar</title>
       </Head>
       <Box css={{ paddingY: '$6', mb: '$6' }}>
-        <PageHeader title="Ghost Planets" />
+        <PageHeader title="Curtains" />
         <Box
           css={{
             display: 'grid',
@@ -18,8 +18,8 @@ export default function Home() {
             gap: '$3',
           }}
         >
-          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624749305/portfolio/ghost-planets/ghost-planets_nfqvpf.mp4" />
-          <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624754967/portfolio/ghost-planets/2021.02.24-09.16.03_jytmxn.mp4" />
+          <Media video="https://res.cloudinary.com/dpym7j3nj/image/upload/v1624841495/portfolio/curtains/springytriangles_zey06z.gif" />
+          <Media video="https://res.cloudinary.com/dpym7j3nj/image/upload/v1624841494/portfolio/curtains/springywavybox_r7enlu.gif" />
         </Box>
       </Box>
     </>
