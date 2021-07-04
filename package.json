@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
+    "postbuild": "bash scripts/move-to-work.sh",
     "start": "next start"
   },
   "dependencies": {
