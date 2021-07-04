@@ -1,14 +1,11 @@
-import Head from 'next/head';
 import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { Media } from '../components/Media';
+import { Layout } from '../components/Layout';
 
 export default function Torsions() {
   return (
-    <>
-      <Head>
-        <title>Works | Varun Vachhar</title>
-      </Head>
+    <Layout>
       <Box css={{ paddingY: '$6', mb: '$6' }}>
         <PageHeader title="Torsions" />
         <Box
@@ -21,6 +18,6 @@ export default function Torsions() {
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624761653/portfolio/torsions/2020.10.18-21.27.27_ynt5m2.mp4" />
         </Box>
       </Box>
-    </>
+    </Layout>
   );
 }

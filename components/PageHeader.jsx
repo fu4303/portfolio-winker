@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { styled } from '../stitches.config';
 import { Divider } from './primitives';
 
@@ -14,9 +15,14 @@ export const PageTitle = styled('h1', {
 });
 
 export const PageHeader = ({ title, children }) => (
-  <header>
-    <PageTitle>{title}</PageTitle>
-    {children}
-    <Divider />
-  </header>
+  <>
+    <Head>
+      <title>{title} | Varun Vachhar</title>
+    </Head>
+    <header>
+      <PageTitle>{title}</PageTitle>
+      {children}
+      <Divider />
+    </header>
+  </>
 );

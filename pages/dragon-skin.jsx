@@ -1,11 +1,11 @@
-import Head from 'next/head';
 import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { Media } from '../components/Media';
+import { Layout } from '../components/Layout';
 
 export default function DragonSkin() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>Works | Varun Vachhar</title>
       </Head>
@@ -23,6 +23,6 @@ export default function DragonSkin() {
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624749295/portfolio/dragon-skin/2021.05.15-20.16.51_oqimuh.mp4" />
         </Box>
       </Box>
-    </>
+    </Layout>
   );
 }

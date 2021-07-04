@@ -1,16 +1,13 @@
-import Head from 'next/head';
 import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { ProjectCard } from '../components/ProjectCard';
 import { VideoCard } from '../components/VideoCard';
+import { Layout } from '../components/Layout';
 import works from '../data/works';
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Works | Varun Vachhar</title>
-      </Head>
+    <Layout>
       <Box css={{ mb: '$6' }}>
         <PageHeader title="Work" />
         <Box
@@ -52,21 +49,6 @@ export default function Home() {
           )}
         </Box>
       </Box>
-    </>
+    </Layout>
   );
 }
-
-// export async function getStaticProps(context) {
-//   const res = await fetch(`https://.../data`);
-//   const data = await res.json();
-
-//   if (!data) {
-//     return {
-//       notFound: true,
-//     };
-//   }
-
-//   return {
-//     props: { data }, // will be passed to the page component as props
-//   };
-// }

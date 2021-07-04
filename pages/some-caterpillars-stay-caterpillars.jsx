@@ -1,14 +1,11 @@
-import Head from 'next/head';
 import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { Media } from '../components/Media';
+import { Layout } from '../components/Layout';
 
 export default function SomeCaterpillarsStayCaterpillars() {
   return (
-    <>
-      <Head>
-        <title>Works | Varun Vachhar</title>
-      </Head>
+    <Layout>
       <Box css={{ paddingY: '$6', mb: '$6' }}>
         <PageHeader title="Some caterpillars stay caterpillars" />
         <Box
@@ -24,6 +21,6 @@ export default function SomeCaterpillarsStayCaterpillars() {
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624825628/portfolio/some-caterpillars-stay-caterpillars/2021.03.03-22.20.13_yf1ahv.mp4" />
         </Box>
       </Box>
-    </>
+    </Layout>
   );
 }

@@ -1,14 +1,11 @@
-import Head from 'next/head';
 import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { Media } from '../components/Media';
+import { Layout } from '../components/Layout';
 
 export default function InfinitePipes() {
   return (
-    <>
-      <Head>
-        <title>Works | Varun Vachhar</title>
-      </Head>
+    <Layout>
       <Box css={{ paddingY: '$6', mb: '$6' }}>
         <PageHeader title="Infinite pipes" />
         <Box
@@ -28,6 +25,6 @@ export default function InfinitePipes() {
           />
         </Box>
       </Box>
-    </>
+    </Layout>
   );
 }

@@ -1,14 +1,11 @@
-import Head from 'next/head';
 import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { Media } from '../components/Media';
+import { Layout } from '../components/Layout';
 
 export default function Curtains() {
   return (
-    <>
-      <Head>
-        <title>Works | Varun Vachhar</title>
-      </Head>
+    <Layout>
       <Box css={{ paddingY: '$6', mb: '$6' }}>
         <PageHeader title="Curtains" />
         <Box
@@ -22,6 +19,6 @@ export default function Curtains() {
           <Media image="https://res.cloudinary.com/dpym7j3nj/image/upload/v1624841495/portfolio/curtains/springytriangles_zey06z.gif" />
         </Box>
       </Box>
-    </>
+    </Layout>
   );
 }

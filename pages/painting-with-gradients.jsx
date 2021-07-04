@@ -1,14 +1,11 @@
-import Head from 'next/head';
 import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { Media } from '../components/Media';
+import { Layout } from '../components/Layout';
 
 export default function PaintingWithGradients() {
   return (
-    <>
-      <Head>
-        <title>Works | Varun Vachhar</title>
-      </Head>
+    <Layout>
       <Box css={{ paddingY: '$6', mb: '$6' }}>
         <PageHeader title="Painting with gradients" />
         <Box
@@ -30,6 +27,6 @@ export default function PaintingWithGradients() {
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624836703/portfolio/painting-with-gradients/1030_zjhnaa.mp4" />
         </Box>
       </Box>
-    </>
+    </Layout>
   );
 }

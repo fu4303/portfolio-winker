@@ -1,14 +1,11 @@
-import Head from 'next/head';
 import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { Media } from '../components/Media';
+import { Layout } from '../components/Layout';
 
 export default function NotQuitePlatonicSolids() {
   return (
-    <>
-      <Head>
-        <title>Works | Varun Vachhar</title>
-      </Head>
+    <Layout>
       <Box css={{ paddingY: '$6', mb: '$6' }}>
         <PageHeader title="Not quite platonic solids" />
         <Box
@@ -23,6 +20,6 @@ export default function NotQuitePlatonicSolids() {
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624766612/portfolio/not-quite-platonic-solids/2021.02.27-17.10.49_ddzlb9.mp4" />
         </Box>
       </Box>
-    </>
+    </Layout>
   );
 }

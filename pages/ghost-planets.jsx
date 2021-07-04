@@ -1,14 +1,11 @@
-import Head from 'next/head';
 import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { Media } from '../components/Media';
+import { Layout } from '../components/Layout';
 
 export default function GhostPlanets() {
   return (
-    <>
-      <Head>
-        <title>Works | Varun Vachhar</title>
-      </Head>
+    <Layout>
       <Box css={{ paddingY: '$6', mb: '$6' }}>
         <PageHeader title="Ghost Planets" />
         <Box
@@ -22,6 +19,6 @@ export default function GhostPlanets() {
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624754967/portfolio/ghost-planets/2021.02.24-09.16.03_jytmxn.mp4" />
         </Box>
       </Box>
-    </>
+    </Layout>
   );
 }

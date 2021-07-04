@@ -1,14 +1,11 @@
-import Head from 'next/head';
 import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { Media } from '../components/Media';
+import { Layout } from '../components/Layout';
 
 export default function GlassySolids() {
   return (
-    <>
-      <Head>
-        <title>Works | Varun Vachhar</title>
-      </Head>
+    <Layout>
       <Box css={{ paddingY: '$6', mb: '$6' }}>
         <PageHeader title="Glassy solids" />
         <Box
@@ -27,6 +24,6 @@ export default function GlassySolids() {
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624758976/portfolio/glassy-solids/2021.02.26-22.22.54_cx4x1a.mp4" />
         </Box>
       </Box>
-    </>
+    </Layout>
   );
 }

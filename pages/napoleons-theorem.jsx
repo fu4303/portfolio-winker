@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useEffect, useRef } from 'react';
 import { Box } from '../components/primitives';
+import { Layout } from '../components/Layout';
 
 export default function NapoleonsTheorem() {
   const triangleRef = useRef(null);
@@ -15,9 +16,10 @@ export default function NapoleonsTheorem() {
       centroidTriangleRef.current &&
       handle1Ref.current &&
       handle2Ref.current &&
-      handle3Ref.current
+      handle3Ref.current &&
+      typeof window !== 'undefined'
     ) {
-      play(
+      return play(
         triangleRef.current,
         centroidTriangleRef.current,
         handle1Ref.current,
@@ -28,7 +30,14 @@ export default function NapoleonsTheorem() {
   }, [triangleRef, centroidTriangleRef, handle1Ref, handle2Ref, handle3Ref]);
 
   return (
-    <>
+    <Layout
+      css={{
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100vh',
+        justifyContent: 'stretch',
+      }}
+    >
       <Head>
         <script
           async
@@ -39,59 +48,71 @@ export default function NapoleonsTheorem() {
           async
           src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
         />
+        <title>Napoleon's Theorem | Varun Vachhar</title>
       </Head>
-      <Box css={{ height: '75vh', mt: '-$6' }}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 400 400"
-          preserveAspectRatio="xMidYMid"
-          style={{
-            width: '100%',
-            height: '100%',
+      <>
+        <Box css={{ flex: '1 1 auto' }} />
+        <Box
+          css={{
+            background: 'rgba(255,255,255,0.1)',
+            height: '100vh',
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            pointerEvents: 'none',
           }}
         >
-          <g fill="none" strokeWidth="2" strokeLinejoin="round">
-            <path ref={triangleRef} stroke="#333" d="" />
-            <path ref={centroidTriangleRef} stroke="#01FF70" d="" />
-            <circle
-              cx="100"
-              cy="200"
-              r="10"
-              ref={handle1Ref}
-              fill="#A463F2"
-              opacity="0.55"
-            />
-            <circle
-              cx="150"
-              cy="100"
-              r="10"
-              ref={handle2Ref}
-              fill="#A463F2"
-              opacity="0.55"
-            />
-            <circle
-              cx="300"
-              cy="200"
-              r="10"
-              ref={handle3Ref}
-              fill="#A463F2"
-              opacity="0.55"
-            />
-          </g>
-        </svg>
-      </Box>
-    </>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 400 400"
+            preserveAspectRatio="xMidYMid"
+            style={{
+              width: '100%',
+              height: '100%',
+            }}
+          >
+            <g
+              fill="none"
+              strokeWidth="2"
+              strokeLinejoin="round"
+              style={{ pointerEvents: 'initial' }}
+            >
+              <path ref={triangleRef} stroke="#333" d="" />
+              <path ref={centroidTriangleRef} stroke="#01FF70" d="" />
+              <circle
+                cx="100"
+                cy="200"
+                r="10"
+                ref={handle1Ref}
+                fill="#A463F2"
+                opacity="0.55"
+              />
+              <circle
+                cx="150"
+                cy="100"
+                r="10"
+                ref={handle2Ref}
+                fill="#A463F2"
+                opacity="0.55"
+              />
+              <circle
+                cx="300"
+                cy="200"
+                r="10"
+                ref={handle3Ref}
+                fill="#A463F2"
+                opacity="0.55"
+              />
+            </g>
+          </svg>
+        </Box>
+      </>
+    </Layout>
   );
 }
 
 function play(triangle, centroidTriangle, handle1, handle2, handle3) {
-  const showDebug = false;
-
-  if (showDebug) {
-    const debugCC = document.querySelector('#js-circum-center');
-    const debug = document.querySelector('#js-debug');
-  }
-
   const animationFrame$ = Rx.Observable.interval(
     0,
     Rx.Scheduler.animationFrame
@@ -101,7 +122,7 @@ function play(triangle, centroidTriangle, handle1, handle2, handle3) {
   const drag = (domNode, pan$) =>
     pan$
       .filter((e) => e.type === 'panstart')
-      .switchMap((pd) => {
+      .switchMap(() => {
         const start = {
           x: +domNode.getAttribute('cx'),
           y: +domNode.getAttribute('cy'),
@@ -221,8 +242,8 @@ function play(triangle, centroidTriangle, handle1, handle2, handle3) {
     }
   );
 
-  svgGeometry$.subscribe(
-    ({ triangleD, centroidTriangleD, handles: [h1, h2, h3], cc, debugD }) => {
+  const subscription = svgGeometry$.subscribe(
+    ({ triangleD, centroidTriangleD, handles: [h1, h2, h3] }) => {
       triangle.setAttribute('d', triangleD.join(''));
       centroidTriangle.setAttribute('d', centroidTriangleD.join(''));
       handle1.setAttribute('cx', h1[0]);
@@ -231,14 +252,12 @@ function play(triangle, centroidTriangle, handle1, handle2, handle3) {
       handle2.setAttribute('cy', h2[1]);
       handle3.setAttribute('cx', h3[0]);
       handle3.setAttribute('cy', h3[1]);
-
-      if (showDebug) {
-        debugCC.setAttribute('cx', cc[0]);
-        debugCC.setAttribute('cy', cc[1]);
-        debug.setAttribute('d', debugD);
-      }
     }
   );
+
+  return () => {
+    subscription.unsubscribe();
+  };
 }
 
 /**

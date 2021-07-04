@@ -7,6 +7,7 @@ export const GlobalHeader = () => (
     css={{
       mx: 'auto',
       my: '$6',
+      width: '100%',
     }}
   >
     <Box

@@ -1,14 +1,11 @@
-import Head from 'next/head';
 import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { Media } from '../components/Media';
+import { Layout } from '../components/Layout';
 
 export default function MashingMesh() {
   return (
-    <>
-      <Head>
-        <title>Works | Varun Vachhar</title>
-      </Head>
+    <Layout>
       <Box css={{ paddingY: '$6', mb: '$6' }}>
         <PageHeader title="Mashing Mesh" />
         <Box
@@ -22,6 +19,6 @@ export default function MashingMesh() {
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624760834/portfolio/mashing-mesh/2021.01.02-22.44.22_wskwio.mp4" />
         </Box>
       </Box>
-    </>
+    </Layout>
   );
 }

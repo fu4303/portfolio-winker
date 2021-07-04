@@ -1,8 +1,6 @@
 import React from 'react';
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
-import { getCssString, global, styled } from '../stitches.config';
-import { GlobalHeader } from '../components/GlobalHeader';
-import { Footer } from '../components/Footer';
+import { getCssString, global } from '../stitches.config';
 
 const globalStyles = global({
   html: { '--inter': 'Inter' },
@@ -12,14 +10,6 @@ const globalStyles = global({
   body: {
     margin: 0,
   },
-});
-
-const Container = styled('div', {
-  mx: 'auto',
-  px: '$3',
-  maxWidth: '$8',
-  '@bp1': { px: '$3' },
-  '@bp2': { px: '$5' },
 });
 
 export default class Document extends NextDocument {
@@ -40,11 +30,7 @@ export default class Document extends NextDocument {
           />
         </Head>
         <body>
-          <Container>
-            <GlobalHeader />
-            <Main />
-            <Footer />
-          </Container>
+          <Main />
           <NextScript />
         </body>
       </Html>
