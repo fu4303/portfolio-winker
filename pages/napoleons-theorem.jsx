@@ -40,7 +40,7 @@ export default function NapoleonsTheorem() {
           src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
         />
       </Head>
-      <Box css={{ height: '75vh' }}>
+      <Box css={{ height: '75vh', mt: '-$6' }}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 400 400"
@@ -54,24 +54,24 @@ export default function NapoleonsTheorem() {
             <path ref={triangleRef} stroke="#333" d="" />
             <path ref={centroidTriangleRef} stroke="#01FF70" d="" />
             <circle
-              cx=""
-              cy=""
+              cx="100"
+              cy="200"
               r="10"
               ref={handle1Ref}
               fill="#A463F2"
               opacity="0.55"
             />
             <circle
-              cx=""
-              cy=""
+              cx="150"
+              cy="100"
               r="10"
               ref={handle2Ref}
               fill="#A463F2"
               opacity="0.55"
             />
             <circle
-              cx=""
-              cy=""
+              cx="300"
+              cy="200"
               r="10"
               ref={handle3Ref}
               fill="#A463F2"
