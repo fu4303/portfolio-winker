@@ -44,64 +44,62 @@ export default function NapoleonsTheorem() {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" />
         <title>Napoleon's Theorem | Varun Vachhar</title>
       </Head>
-      <>
-        <Box css={{ flex: '1 1 auto' }} />
-        <Box
-          css={{
-            background: 'rgba(255,255,255,0.1)',
-            height: '100vh',
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            pointerEvents: 'none',
+      <Box css={{ flex: '1 1 auto' }} />
+      <Box
+        css={{
+          background: 'rgba(255,255,255,0.1)',
+          height: '100vh',
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          pointerEvents: 'none',
+        }}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 400 400"
+          preserveAspectRatio="xMidYMid"
+          style={{
+            width: '100%',
+            height: '100%',
           }}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 400 400"
-            preserveAspectRatio="xMidYMid"
-            style={{
-              width: '100%',
-              height: '100%',
-            }}
+          <g
+            fill="none"
+            strokeWidth="2"
+            strokeLinejoin="round"
+            style={{ pointerEvents: 'initial' }}
           >
-            <g
-              fill="none"
-              strokeWidth="2"
-              strokeLinejoin="round"
-              style={{ pointerEvents: 'initial' }}
-            >
-              <path ref={triangleRef} stroke="#333" d="" />
-              <path ref={centroidTriangleRef} stroke="#01FF70" d="" />
-              <circle
-                cx="100"
-                cy="200"
-                r="10"
-                ref={handle1Ref}
-                fill="#A463F2"
-                opacity="0.55"
-              />
-              <circle
-                cx="150"
-                cy="100"
-                r="10"
-                ref={handle2Ref}
-                fill="#A463F2"
-                opacity="0.55"
-              />
-              <circle
-                cx="300"
-                cy="200"
-                r="10"
-                ref={handle3Ref}
-                fill="#A463F2"
-                opacity="0.55"
-              />
-            </g>
-          </svg>
-        </Box>
-      </>
+            <path ref={triangleRef} stroke="#333" d="" />
+            <path ref={centroidTriangleRef} stroke="#01FF70" d="" />
+            <circle
+              cx="100"
+              cy="200"
+              r="10"
+              ref={handle1Ref}
+              fill="#A463F2"
+              opacity="0.55"
+            />
+            <circle
+              cx="150"
+              cy="100"
+              r="10"
+              ref={handle2Ref}
+              fill="#A463F2"
+              opacity="0.55"
+            />
+            <circle
+              cx="300"
+              cy="200"
+              r="10"
+              ref={handle3Ref}
+              fill="#A463F2"
+              opacity="0.55"
+            />
+          </g>
+        </svg>
+      </Box>
     </Layout>
   );
 }
