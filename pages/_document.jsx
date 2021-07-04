@@ -2,6 +2,7 @@ import React from 'react';
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
 import { getCssString, global, styled } from '../stitches.config';
 import { GlobalHeader } from '../components/GlobalHeader';
+import { Footer } from '../components/Footer';
 
 const globalStyles = global({
   html: { '--inter': 'Inter' },
@@ -42,6 +43,7 @@ export default class Document extends NextDocument {
           <Container>
             <GlobalHeader />
             <Main />
+            <Footer />
           </Container>
           <NextScript />
         </body>

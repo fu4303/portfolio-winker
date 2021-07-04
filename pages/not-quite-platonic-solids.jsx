@@ -3,7 +3,7 @@ import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { Media } from '../components/Media';
 
-export default function Home() {
+export default function NotQuitePlatonicSolids() {
   return (
     <>
       <Head>

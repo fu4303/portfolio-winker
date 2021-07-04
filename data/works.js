@@ -20,7 +20,7 @@ export default [
     title: 'Not quite platonic solids',
     link: '/not-quite-platonic-solids',
     video:
-      'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624761078/portfolio/not-quite-platonic-solids/2021.03.02-20.46.03_nhm95t.mp4',
+      'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624766614/portfolio/not-quite-platonic-solids/2021.03.02-20.50.44_idbqud.mp4',
     type: 'video',
     year: 2021,
   },
@@ -49,8 +49,8 @@ export default [
     year: 2021,
   },
   {
-    title: 'RLRR',
-    link: '/rlrr',
+    title: 'Some caterpillars evolve',
+    link: '/some-caterpillars-evolve',
     image:
       'https://res.cloudinary.com/dpym7j3nj/image/upload/v1624755787/portfolio/rlrr/rlrr-cover_ersnan.png',
     type: 'image',
@@ -81,41 +81,34 @@ export default [
     type: 'video',
     year: 2020,
   },
-  {
-    title: 'Some caterpillars stay caterpillars',
-    link: '/some-caterpillars-stay-caterpillars',
-    video:
-      'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624825612/portfolio/some-caterpillars-stay-caterpillars/2021.01.02-21.17.27_wzezju.mp4',
-    type: 'video',
-    year: 2020,
-  },
+  // {
+  //   title: 'Some caterpillars stay caterpillars',
+  //   link: '/some-caterpillars-stay-caterpillars',
+  //   video:
+  //     'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624825612/portfolio/some-caterpillars-stay-caterpillars/2021.01.02-21.17.27_wzezju.mp4',
+  //   type: 'video',
+  //   year: 2020,
+  // },
   {
     title: 'Curtains',
     link: '/curtains',
     image:
-      'https://res.cloudinary.com/dpym7j3nj/image/upload/v1624841494/portfolio/curtains/springywavybox_r7enlu.gif',
+      'https://res.cloudinary.com/dpym7j3nj/image/upload/v1624841495/portfolio/curtains/springytriangles_zey06z.gif',
     type: 'gif',
     year: 2012,
   },
   // {
   //   title: 'Homesick',
-  //   link: '/homesick',
+  //   link: 'https://varun.ca/projects/homesick/',
   //   image: './homesick.png',
   //   type: 'installation',
   //   year: 2013,
   // },
   // {
   //   title: 'Tethered Motion',
-  //   link: '/tethered-motion',
+  //   link: 'https://varun.ca/projects/tethered-motion/',
   //   image: './wave.gif',
   //   type: 'installation',
-  //   year: 2011,
-  // },
-  // {
-  //   title: 'Chaos Theory',
-  //   link: 'https://vimeo.com/23056893',
-  //   image: './chaostheory.png',
-  //   type: 'video',
   //   year: 2011,
   // },
 ];

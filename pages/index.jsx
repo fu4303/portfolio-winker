@@ -12,7 +12,7 @@ export default function Home() {
         <title>Works | Varun Vachhar</title>
       </Head>
       <Box css={{ mb: '$6' }}>
-        <PageHeader title="Works" />
+        <PageHeader title="Work" />
         <Box
           css={{
             display: 'grid',

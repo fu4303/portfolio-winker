@@ -3,7 +3,7 @@ import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { Media } from '../components/Media';
 
-export default function Home() {
+export default function Curtains() {
   return (
     <>
       <Head>
@@ -18,8 +18,8 @@ export default function Home() {
             gap: '$3',
           }}
         >
-          <Media video="https://res.cloudinary.com/dpym7j3nj/image/upload/v1624841495/portfolio/curtains/springytriangles_zey06z.gif" />
-          <Media video="https://res.cloudinary.com/dpym7j3nj/image/upload/v1624841494/portfolio/curtains/springywavybox_r7enlu.gif" />
+          <Media image="https://res.cloudinary.com/dpym7j3nj/image/upload/v1624841494/portfolio/curtains/springywavybox_r7enlu.gif" />
+          <Media image="https://res.cloudinary.com/dpym7j3nj/image/upload/v1624841495/portfolio/curtains/springytriangles_zey06z.gif" />
         </Box>
       </Box>
     </>

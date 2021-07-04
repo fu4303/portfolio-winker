@@ -3,7 +3,7 @@ import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { Media } from '../components/Media';
 
-export default function Home() {
+export default function InfinitePipes() {
   return (
     <>
       <Head>
@@ -22,6 +22,10 @@ export default function Home() {
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624769021/portfolio/infinite-pipes/2021.06.27-00.38.18_ru3a4h.mp4" />
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624769017/portfolio/infinite-pipes/2021.06.27-00.39.09_cb1arq.mp4" />
           <Media video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1624769023/portfolio/infinite-pipes/2021.06.27-00.43.01_o4qpo6.mp4" />
+          <Media
+            video="https://res.cloudinary.com/dpym7j3nj/video/upload/v1625344484/portfolio/infinite-pipes/2021.06.27-00.52.20_bngwpt.mp4"
+            css={{ gridColumn: '1 / -1' }}
+          />
         </Box>
       </Box>
     </>
