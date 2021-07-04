@@ -39,15 +39,9 @@ export default function NapoleonsTheorem() {
       }}
     >
       <Head>
-        <script
-          async
-          src="https://unpkg.com/@reactivex/rxjs@5.1.0/dist/global/Rx.min.js"
-        />
-        <script async src="https://unpkg.com/rxcss@latest/dist/rxcss.min.js" />
-        <script
-          async
-          src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
-        />
+        <script src="https://unpkg.com/@reactivex/rxjs@5.1.0/dist/global/Rx.min.js" />
+        <script src="https://unpkg.com/rxcss@latest/dist/rxcss.min.js" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" />
         <title>Napoleon's Theorem | Varun Vachhar</title>
       </Head>
       <>
