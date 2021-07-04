@@ -23,7 +23,7 @@ export default class Document extends NextDocument {
             type="text/css"
             href="https://rsms.me/inter/inter.css"
           />
-          <link rel="icon" href="/favicon-32x32.png" type="image/png" />
+          <link rel="icon" href="/work/favicon-32x32.png" type="image/png" />
           <style
             id="stitches"
             dangerouslySetInnerHTML={{ __html: getCssString() }}

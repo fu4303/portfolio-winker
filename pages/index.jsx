@@ -3,6 +3,7 @@ import { PageHeader } from '../components/PageHeader';
 import { ProjectCard } from '../components/ProjectCard';
 import { VideoCard } from '../components/VideoCard';
 import { Layout } from '../components/Layout';
+import { SEO } from '../components/SEO';
 import works from '../data/works';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     <Layout>
       <Box css={{ mb: '$6' }}>
         <PageHeader title="Work" />
+        <SEO title="Work" image="" pathname="/" />
         <Box
           css={{
             display: 'grid',

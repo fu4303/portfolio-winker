@@ -81,14 +81,6 @@ export default [
     type: 'video',
     year: 2020,
   },
-  // {
-  //   title: 'Some caterpillars stay caterpillars',
-  //   link: '/some-caterpillars-stay-caterpillars',
-  //   video:
-  //     'https://res.cloudinary.com/dpym7j3nj/video/upload/v1624825612/portfolio/some-caterpillars-stay-caterpillars/2021.01.02-21.17.27_wzezju.mp4',
-  //   type: 'video',
-  //   year: 2020,
-  // },
   {
     title: 'Curtains',
     link: '/curtains',

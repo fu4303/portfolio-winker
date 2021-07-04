@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import { useEffect, useRef } from 'react';
+import Script from 'next/script';
+import { useEffect, useRef, useState } from 'react';
 import { Box } from '../components/primitives';
 import { Layout } from '../components/Layout';
 
@@ -9,6 +10,9 @@ export default function NapoleonsTheorem() {
   const handle1Ref = useRef(null);
   const handle2Ref = useRef(null);
   const handle3Ref = useRef(null);
+  const [rxReady, setRxReady] = useState(false);
+  const [rxcssReady, setRxcssReady] = useState(false);
+  const [hammerReady, setHammerReady] = useState(false);
 
   useEffect(() => {
     if (
@@ -17,7 +21,10 @@ export default function NapoleonsTheorem() {
       handle1Ref.current &&
       handle2Ref.current &&
       handle3Ref.current &&
-      typeof window !== 'undefined'
+      typeof window !== 'undefined' &&
+      rxReady &&
+      rxcssReady &&
+      hammerReady
     ) {
       return play(
         triangleRef.current,
@@ -27,7 +34,16 @@ export default function NapoleonsTheorem() {
         handle3Ref.current
       );
     }
-  }, [triangleRef, centroidTriangleRef, handle1Ref, handle2Ref, handle3Ref]);
+  }, [
+    triangleRef,
+    centroidTriangleRef,
+    handle1Ref,
+    handle2Ref,
+    handle3Ref,
+    rxReady,
+    rxcssReady,
+    hammerReady,
+  ]);
 
   return (
     <Layout
@@ -39,11 +55,26 @@ export default function NapoleonsTheorem() {
       }}
     >
       <Head>
-        <script src="https://unpkg.com/@reactivex/rxjs@5.1.0/dist/global/Rx.min.js" />
-        <script src="https://unpkg.com/rxcss@latest/dist/rxcss.min.js" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" />
         <title>Napoleon's Theorem | Varun Vachhar</title>
       </Head>
+      <Script
+        src="/work/rx.min.js"
+        onLoad={() => {
+          setRxReady(true);
+        }}
+      />
+      <Script
+        src="/work/rxcss.min.js"
+        onLoad={() => {
+          setRxcssReady(true);
+        }}
+      />
+      <Script
+        src="/work/hammer.min.js"
+        onLoad={() => {
+          setHammerReady(true);
+        }}
+      />
       <Box css={{ flex: '1 1 auto' }} />
       <Box
         css={{
