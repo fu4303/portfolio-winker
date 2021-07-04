@@ -6,9 +6,6 @@ import { Layout } from '../components/Layout';
 export default function DragonSkin() {
   return (
     <Layout>
-      <Head>
-        <title>Works | Varun Vachhar</title>
-      </Head>
       <Box css={{ paddingY: '$6', mb: '$6' }}>
         <PageHeader title="Dragon skin" />
         <Box
