@@ -5,7 +5,7 @@ const siteUrl = 'https://varun.ca/work';
 export function SEO({
   description = '',
   title,
-  image = '/chromatic-noise.png',
+  image = 'https://res.cloudinary.com/dpym7j3nj/image/upload/v1625445348/portfolio/chromatic-noise_jkjblh.png',
   pathname = '/',
 }) {
   return (
