@@ -11,7 +11,11 @@ export default function Home() {
     <Layout>
       <Box css={{ mb: '$6' }}>
         <PageHeader title="Work" />
-        <SEO title="Work" image="" pathname="/" />
+        <SEO
+          title="Work"
+          description="Gallery of generative art by Varun Vachhar"
+          pathname="/"
+        />
         <Box
           css={{
             display: 'grid',
