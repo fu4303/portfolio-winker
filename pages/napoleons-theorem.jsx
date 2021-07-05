@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Script from 'next/script';
 import { useEffect, useRef, useState } from 'react';
 import { Box } from '../components/primitives';

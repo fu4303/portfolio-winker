@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 
 const siteUrl = 'https://varun.ca/work';
 
@@ -14,6 +15,18 @@ export function SEO({
         <title>{title} | Varun Vachhar</title>
         {description && <meta name="description" content={description} />}
       </Head>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-22315045-9"
+        onload={() => {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'UA-22315045-9');
+        }}
+      />
       <Facebook
         description={description}
         image={image}
