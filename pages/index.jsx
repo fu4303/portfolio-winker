@@ -20,10 +20,10 @@ export default function Home() {
             gap: '$3',
           }}
         >
-          {works.map((work, idx) =>
+          {works.map((work) =>
             work.video ? (
               <VideoCard
-                key={idx}
+                key={work.id}
                 css={
                   work.span
                     ? {
@@ -36,7 +36,7 @@ export default function Home() {
               />
             ) : (
               <ProjectCard
-                key={idx}
+                key={work.id}
                 css={
                   work.span
                     ? {

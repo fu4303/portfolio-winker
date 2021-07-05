@@ -2,10 +2,14 @@ import { Box } from '../components/primitives';
 import { PageHeader } from '../components/PageHeader';
 import { Media } from '../components/Media';
 import { Layout } from '../components/Layout';
+import { SEO } from '../components/SEO';
+import { workById } from '../data/works';
+const work = workById('SomeCaterpillarsEvolve');
 
 export default function SomeCaterpillarsEvolve() {
   return (
     <Layout>
+      <SEO title={work.title} image={work.ogImage} pathname={work.url} />
       <Box css={{ paddingY: '$6', mb: '$6' }}>
         <PageHeader title="Some caterpillars evolve" />
         <Box

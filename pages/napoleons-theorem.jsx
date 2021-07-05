@@ -3,6 +3,7 @@ import Script from 'next/script';
 import { useEffect, useRef, useState } from 'react';
 import { Box } from '../components/primitives';
 import { Layout } from '../components/Layout';
+import { SEO } from '../components/SEO';
 
 export default function NapoleonsTheorem() {
   const triangleRef = useRef(null);
@@ -54,9 +55,7 @@ export default function NapoleonsTheorem() {
         justifyContent: 'stretch',
       }}
     >
-      <Head>
-        <title>Napoleon's Theorem | Varun Vachhar</title>
-      </Head>
+      <SEO title="Napoleon's Theorem" />
       <Script
         src="/work/rx.min.js"
         onLoad={() => {

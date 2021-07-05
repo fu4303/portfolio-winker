@@ -4,7 +4,7 @@ import { Box, Text, Link } from './primitives';
 const siteLinks = [
   { title: 'About', to: 'https://varun.ca/' },
   { title: 'Writing', to: 'https://varun.ca/writing' },
-  { title: 'Work', to: '/' },
+  { title: 'Work', to: '/work' },
   { title: 'RSS', to: 'https://varun.ca/rss.xml' },
 ];
 

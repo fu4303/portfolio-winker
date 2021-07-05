@@ -19,13 +19,6 @@ const Thumbnail = styled(AspectRatio, {
   flex: 1,
 });
 
-// const Thumbnail = styled('div', {
-//   width: '100%',
-//   flex: 1,
-//   overflow: 'hidden',
-//   position: 'relative',
-// });
-
 const Video = styled('video', {
   position: 'absolute',
   top: 0,
@@ -47,8 +40,8 @@ const Title = styled('p', {
   lineHeight: '$solid',
 });
 
-export const VideoCard = ({ title, link, video, ...props }) => (
-  <NextLink href={link} passHref>
+export const VideoCard = ({ title, url, video, ...props }) => (
+  <NextLink href={url} passHref>
     <Card {...props}>
       <Thumbnail>
         <Video autoPlay loop muted playsInline display="block" mb="0">
