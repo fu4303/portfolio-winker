@@ -12,6 +12,7 @@ export function SEO({
     <>
       <Head>
         <title>{title} | Varun Vachhar</title>
+        {description && <meta name="description" content={description} />}
       </Head>
       <Facebook
         description={description}
